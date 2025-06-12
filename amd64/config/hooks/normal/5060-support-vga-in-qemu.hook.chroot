@@ -1,0 +1,10 @@
+#!/bin/sh
+# Source: https://salsa.debian.org/live-team/live-build/-/blob/master/test/rebuild.sh?ref_type=heads
+set -e
+
+# When qemu uses the 'VGA' option, this kernel module is required for the
+# console output, otherwise the output will be garbled.
+# The kernel option 'verify-checksums' is activated before systemd runs
+# 'modprobe@drm.service', so the module needs to be in the initramfs.
+# See also https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1872863
+echo "bochs" >> /etc/initramfs-tools/modules

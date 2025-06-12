@@ -1,0 +1,177 @@
+[ca/desrt/dconf-editor]
+show-warning=false
+
+[org/gnome/TextEditor]
+highlight-current-line=true
+indent-style='space'
+restore-session=false
+show-line-numbers=true
+spellcheck=false
+tab-width=uint32 4
+
+[org/gnome/calculator]
+button-mode='advanced'
+refresh-interval=0
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/gnome/adwaita-l.webp'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/adwaita-d.webp'
+
+[org/gnome/desktop/calendar]
+show-weekdate=true
+
+[org/gnome/desktop/interface]
+enable-hot-corners=false
+gtk-enable-primary-paste=false
+monospace-font-name='Liberation Mono 11'
+show-battery-percentage=true
+
+[org/gnome/desktop/media-handling]
+autorun-never=true
+
+[org/gnome/desktop/notifications]
+show-in-lock-screen=false
+
+[org/gnome/desktop/peripherals/touchpad]
+disable-while-typing=false
+tap-to-click=true
+
+[org/gnome/desktop/privacy]
+recent-files-max-age=0
+remember-app-usage=false
+remember-recent-files=false
+remove-old-temp-files=true
+report-technical-problems=false
+
+[org/gnome/desktop/screensaver]
+picture-uri='file:///usr/share/backgrounds/gnome/adwaita-l.webp'
+
+[org/gnome/desktop/wm/keybindings]
+switch-applications=@as []
+switch-applications-backward=@as []
+switch-windows=['<Super>Tab', '<Alt>Tab']
+switch-windows-backward=['<Shift><Super>Tab', '<Shift><Alt>Tab']
+
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+
+[org/gnome/eog/plugins]
+active-plugins=['statusbar-date']
+
+[org/gnome/eog/ui]
+sidebar=false
+statusbar=true
+
+[org/gnome/mutter]
+center-new-windows=true
+
+[org/gnome/nautilus/list-view]
+default-visible-columns=['name', 'size', 'date_modified_with_time']
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='list-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control><Alt>t'
+command='gnome-terminal'
+name='Terminal'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Shift><Control>Escape'
+command='gnome-system-monitor'
+name='System Monitor'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Super>period'
+command='flatpak run com.tomjwatson.Emote'
+name='Emoji Picker'
+
+[org/gnome/shell]
+enabled-extensions=['drive-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'arcmenu@arcmenu.com', 'ding@rastersoft.com', 'appindicatorsupport@rgcjonas.gmail.com', 'lockkeys@fawtytoo', 'lockkeys@vaina.lt', 'date-menu-formatter@marcinjakubowski.github.com', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'lunarcal@ailin.nemui', 'caffeine@patapon.info', 'kimpanel@kde.org']
+favorite-apps=['firefox-esr.desktop', 'org.gnome.Nautilus.desktop', 'wps-office-prometheus.desktop', 'org.gnome.Software.desktop', 'thunderbird.desktop', 'install-debian.desktop']
+welcome-dialog-last-shown-version='4294967295'
+
+[org/gnome/shell/extensions/arcmenu]
+alphabetize-all-programs=false
+custom-menu-button-icon-size=28.0
+default-menu-view='All_Programs'
+disable-recently-installed-apps=true
+distro-icon=0
+hide-overview-on-startup=true
+menu-button-active-bg-color=(true, 'rgba(242,242,242,0.2)')
+menu-button-active-fg-color=(true, 'rgb(242,242,242)')
+menu-button-appearance='Icon'
+menu-button-border-radius=(true, 0)
+menu-button-border-width=(true, 0)
+menu-button-hover-bg-color=(true, 'rgba(242,242,242,0.15)')
+menu-button-icon='Distro_Icon'
+menu-item-icon-size='Large'
+menu-layout='Default'
+
+[org/gnome/shell/extensions/blur-my-shell/applications]
+blur=false
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=false
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+blur=false
+
+[org/gnome/shell/extensions/dash-to-panel]
+appicon-margin=1
+appicon-padding=6
+click-action='TOGGLE-SHOWPREVIEW'
+hide-overview-on-startup=true
+hot-keys=true
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-sizes='{"0":40}'
+scroll-icon-action='NOTHING'
+scroll-panel-action='NOTHING'
+shift-click-action='LAUNCH'
+show-showdesktop-hover=true
+stockgs-panelbtn-click-only=true
+trans-panel-opacity=0.75
+trans-use-custom-gradient=true
+trans-use-custom-opacity=true
+
+[org/gnome/shell/extensions/date-menu-formatter]
+apply-all-panels=true
+font-size=10
+pattern='k:mm\\ny/M/d'
+remove-messages-indicator=true
+use-default-locale=false
+
+[org/gnome/shell/extensions/just-perfection]
+accessibility-menu=false
+notification-banner-position=5
+startup-status=0
+weather=false
+window-demands-attention-focus=true
+world-clock=false
+
+[org/gnome/shell/extensions/lockkeys]
+style='show-hide'
+
+[org/gnome/shell/extensions/lunar-calendar]
+show-time=false
+
+[org/gnome/software]
+download-updates=false
+download-updates-notify=false
+first-run=false
+prompt-for-nonfree=false
+show-nonfree-ui=false
+
+[org/gnome/terminal/legacy]
+menu-accelerator-enabled=false
+new-tab-position='next'
+new-terminal-mode='tab'
+theme-variant='dark'
+
+[org/gtk/gtk4/settings/file-chooser]
+sort-directories-first=true
