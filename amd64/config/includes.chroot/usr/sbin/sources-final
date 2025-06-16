@@ -1,3 +1,15 @@
+#!/bin/sh
+#
+# Writes the final sources.list file
+#
+
+CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
+RELEASE="bookworm"
+
+cat << EOF > $CHROOT/etc/apt/sources.list
 deb https://mirrors.aliyun.com/debian bookworm main non-free-firmware non-free contrib
 deb https://mirrors.aliyun.com/debian bookworm-updates main non-free-firmware non-free contrib
 deb https://mirrors.aliyun.com/debian-security bookworm-security main non-free-firmware non-free contrib
+EOF
+
+exit 0

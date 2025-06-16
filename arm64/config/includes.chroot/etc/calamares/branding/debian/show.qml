@@ -40,8 +40,8 @@ Presentation
         Text {
             anchors.horizontalCenter: background1.horizontalCenter
             anchors.top: background1.bottom
-            text: qsTr("Welcome to Debian GNU/Linux.<br/>"+
-                  "The rest of the installation is automated and should complete in a few minutes.")
+            text: qsTr("欢迎使用THOS。<br/>"+
+                  "安装程序正在安装操作系统，请稍候……")
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center

@@ -3,3 +3,4 @@
 set -e
 
 echo 'Name[zh_CN]=安装系统' | tee -a /usr/share/applications/install-debian.desktop
+sed -i 's/^Icon=install-debian/Icon=calamares/g' /usr/share/applications/install-debian.desktop
