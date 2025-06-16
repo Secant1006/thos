@@ -16,3 +16,9 @@ vlc
 vlc-l10n
 7zip
 webext-ublock-origin-firefox
+pciutils
+usbutils
+smartmontools
+dmidecode
+rsync
+systemd-timesyncd
