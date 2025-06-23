@@ -1,0 +1,39 @@
+---
+componentName:   debian
+welcomeStyleCalamares: true
+welcomeExpandingLogo: true
+windowExpanding: normal
+windowSize: 800px,580px
+windowPlacement: center
+
+strings:
+    productName:         THOS
+    shortProductName:    THOS
+    version:             0.7
+    shortVersion:        0.7
+    versionedName:       THOS 0.7
+    shortVersionedName:  THOS 0.7
+    bootloaderEntryName: THOS
+    productUrl:          https://github.com/Secant1006/thos
+    supportUrl:          https://github.com/Secant1006/thos
+    knownIssuesUrl:      https://github.com/Secant1006/thos
+    releaseNotesUrl:     https://github.com/Secant1006/thos
+    donateUrl:           https://github.com/Secant1006/thos
+
+sidebar: widget
+navigation: widget
+
+images:
+    productLogo:         "debian-logo.png"
+    productIcon:         "debian-logo.png"
+    productWelcome:      "welcome.png"
+
+slideshow:               "show.qml"
+
+style:
+   SidebarBackground:    "#26475b"
+   SidebarText:          "#FFFFFF"
+   SidebarTextCurrent:   "#fbfbfb"
+   SidebarBackgroundCurrent: "#265370"
+
+slideshowAPI: 2

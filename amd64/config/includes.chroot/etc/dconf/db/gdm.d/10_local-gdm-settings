@@ -1,5 +1,0 @@
-[org/gnome/desktop/interface]
-monospace-font-name="Liberation Mono 11"
-
-[org/gnome/desktop/peripherals/touchpad]
-tap-to-click=true

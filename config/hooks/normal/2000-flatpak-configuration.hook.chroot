@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+flatpak remote-add --system --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-modify --system flathub --url=https://mirror.sjtu.edu.cn/flathub
+#flatpak update --system --appstream
+flatpak override --system --filesystem=xdg-config:ro
+#flatpak install --system --noninteractive com.mattjakeman.ExtensionManager
+#flatpak install --system --noninteractive com.tomjwatson.Emote
+#flatpak install --system --noninteractive org.mozilla.firefox
+#flatpak install --system --noninteractive org.mozilla.Thunderbird
+#flatpak install --system --noninteractive org.videolan.VLC
+#flatpak install --system --noninteractive com.github.tchx84.Flatseal

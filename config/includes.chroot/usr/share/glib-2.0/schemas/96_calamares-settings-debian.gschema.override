@@ -1,0 +1,10 @@
+# Launcher icons
+[org.gnome.shell]
+favorite-apps=['firefox-esr.desktop', 'org.gnome.Nautilus.desktop', 'wps-office-prometheus.desktop', 'org.gnome.Software.desktop', 'thunderbird.desktop', 'calamares-install-debian.desktop']
+
+# We don't want the screensaver to enable on the live media while installing
+[org.gnome.desktop.lockdown]
+disable-lock-screen=true
+
+[org.gnome.desktop.session]
+idle-delay=0

@@ -1,0 +1,12 @@
+﻿[qt]
+qt-system-tray=0
+qt-recentplay=0
+qt-continue=0
+qt-privacy-ask=0
+qt-max-volume=100
+qt-auto-raise=0
+
+[core]
+video-title-show=0
+loop=1
+metadata-network-access=1

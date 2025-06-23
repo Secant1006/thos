@@ -1,0 +1,23 @@
+#!/bin/sh
+#
+# Writes the final sources.list file
+#
+
+CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
+RELEASE="trixie"
+
+cat << EOF > $CHROOT/etc/apt/sources.list.d/debian.sources
+Types: deb
+URIs: http://mirrors.aliyun.com/debian
+Suites: $RELEASE $RELEASE-updates
+Components: main non-free-firmware non-free contrib
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: http://mirrors.aliyun.com/debian-security
+Suites: $RELEASE-security
+Components: main non-free-firmware non-free contrib
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+EOF
+
+exit 0

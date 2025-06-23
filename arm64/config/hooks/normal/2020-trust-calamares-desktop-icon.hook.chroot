@@ -1,5 +1,0 @@
-#!/bin/sh
-
-set -e
-
-echo 'gio set $DESKTOP/install-debian.desktop metadata::trusted true' >> /usr/bin/add-calamares-desktop-icon

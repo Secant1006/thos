@@ -1,6 +1,0 @@
-#!/bin/sh
-
-set -e
-
-mkdir -p /etc/xdg/autostart
-cp /usr/share/applications/org.fcitx.Fcitx5.desktop /etc/xdg/autostart/
