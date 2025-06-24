@@ -3,5 +3,6 @@
 set -e
 
 dconf update
+dpkg-reconfigure gdm3
 glib-compile-schemas /usr/share/glib-2.0/schemas
 

@@ -11,3 +11,6 @@ accel-profile='flat'
 disable-while-typing=false
 tap-to-click=true
 
+[org/gnome/login-screen]
+logo=''
+

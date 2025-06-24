@@ -1,5 +1,5 @@
 live-task-gnome
-gnome-shell-extension-prefs
+gnome-shell-extension-manager
 gir1.2-gnomeautoar-0.1
 gir1.2-gnomedesktop-3.0
 gir1.2-gmenu-3.0
@@ -27,3 +27,4 @@ gdebi
 numactl
 vlc
 vlc-l10n
+webext-ublock-origin-firefox
