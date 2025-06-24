@@ -1,0 +1,6 @@
+#!/bin/sh
+
+mkdir -p /home/user/桌面
+cp /usr/share/applications/calamares-install-debian.desktop /home/user/桌面
+chmod +x /home/user/桌面/calamares-install-debian.desktop
+gio set /home/user/桌面/calamares-install-debian.desktop metadata::trusted true
