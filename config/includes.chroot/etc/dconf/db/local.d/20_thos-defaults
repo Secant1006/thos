@@ -95,7 +95,7 @@ command='flatpak run com.tomjwatson.Emote'
 name='Emoji Picker'
 
 [org/gnome/shell]
-enabled-extensions=['drive-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'ding@rastersoft.com', 'appindicatorsupport@rgcjonas.gmail.com', 'lockkeys@fawtytoo', 'lockkeys@vaina.lt', 'date-menu-formatter@marcinjakubowski.github.com', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'lunarcal@ailin.nemui', 'caffeine@patapon.info', 'kimpanel@kde.org', 'light-style@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['drive-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'ding@rastersoft.com', 'appindicatorsupport@rgcjonas.gmail.com', 'lockkeys@fawtytoo', 'lockkeys@vaina.lt', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'lunarcal@ailin.nemui', 'caffeine@patapon.info', 'kimpanel@kde.org', 'light-style@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['firefox-esr.desktop', 'org.gnome.Nautilus.desktop', 'wps-office-prometheus.desktop', 'org.gnome.Software.desktop', 'thunderbird.desktop', 'calamares-install-debian.desktop']
 welcome-dialog-last-shown-version='4294967295'
 
@@ -130,15 +130,6 @@ require-pressure-to-show=false
 running-indicator-style='DOTS'
 shift-click-action='launch'
 shift-middle-click-action='launch'
-
-[org/gnome/shell/extensions/date-menu-formatter]
-apply-all-panels=true
-font-size=11
-pattern='y/M/d    H:mm'
-remove-messages-indicator=true
-text-align='center'
-update-level=0
-use-default-locale=false
 
 [org/gnome/shell/extensions/just-perfection]
 accessibility-menu=false
