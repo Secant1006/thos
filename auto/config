@@ -5,7 +5,7 @@ set -e
 bootloader="grub-efi"
 
 if [ "$(dpkg --print-architecture)" = "amd64" ]; then
-    bootloader="syslinux grub-efi"
+    $bootloader="syslinux grub-efi"
 fi
 
 lb config noauto \

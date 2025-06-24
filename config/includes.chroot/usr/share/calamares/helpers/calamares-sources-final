@@ -5,7 +5,7 @@
 
 CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
 RELEASE="trixie"
-
+rm $CHROOT/etc/apt/sources.list
 cat << EOF > $CHROOT/etc/apt/sources.list.d/debian.sources
 Types: deb
 URIs: http://mirrors.aliyun.com/debian
