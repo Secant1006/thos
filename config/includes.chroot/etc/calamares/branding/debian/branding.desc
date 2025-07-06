@@ -9,10 +9,10 @@ windowPlacement: center
 strings:
     productName:         THOS
     shortProductName:    THOS
-    version:             0.7
-    shortVersion:        0.7
-    versionedName:       THOS 0.7
-    shortVersionedName:  THOS 0.7
+    version:             0.8
+    shortVersion:        0.8
+    versionedName:       THOS 0.8
+    shortVersionedName:  THOS 0.8
     bootloaderEntryName: THOS
     productUrl:          https://github.com/Secant1006/thos
     supportUrl:          https://github.com/Secant1006/thos
