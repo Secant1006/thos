@@ -35,5 +35,9 @@ lb config noauto \
 	--checksums sha256 \
 	--chroot-filesystem squashfs \
 	--memtest memtest86+ \
-	--bootloaders "$bootloader"
+	--bootloaders "$bootloader" \
+    --iso-application "THOS" \
+    --iso-preparer "" \
+    --iso-publisher "" \
+	--iso-volume "THOS 0.8.1 $(dpkg --print-architecture)"
 "${@}"

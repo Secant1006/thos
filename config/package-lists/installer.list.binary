@@ -6,8 +6,6 @@ shim-signed
 shim-signed-common
 shim-unsigned
 #if ARCHITECTURES amd64
-grub-pc
-grub-pc-bin
 grub-efi-amd64
 grub-efi-amd64-bin
 grub-efi-amd64-signed
