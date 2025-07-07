@@ -34,6 +34,18 @@ autorun-never=true
 [org/gnome/desktop/notifications]
 show-in-lock-screen=false
 
+[org/gnome/desktop/notifications/application/fcitx5-configtool]
+enable=false
+
+[org/gnome/desktop/notifications/application/org-fcitx-fcitx5-migrator]
+enable=false
+
+[org/gnome/desktop/notifications/application/org-fcitx-fcitx5]
+enable=false
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+enable=false
+
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='flat'
 

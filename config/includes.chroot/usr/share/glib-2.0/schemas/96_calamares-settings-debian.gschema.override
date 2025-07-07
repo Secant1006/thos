@@ -8,3 +8,6 @@ disable-lock-screen=true
 
 [org.gnome.desktop.session]
 idle-delay=0
+
+[org.gnome.settings-daemon.plugins.power]
+idle-dim=false

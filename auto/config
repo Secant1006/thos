@@ -12,7 +12,6 @@ lb config noauto \
 	--clean \
 	--ignore-system-defaults \
 	--mode debian \
-	--debian-installer live \
 	--bootappend-live "boot=live components locales=zh_CN.UTF-8 keyboard-layouts=us timezone=Asia/Shanghai" \
 	--linux-packages "linux-image linux-headers" \
 	--source false \

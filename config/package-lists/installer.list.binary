@@ -1,0 +1,23 @@
+grub-efi
+efibootmgr
+grub2-common
+mokutil
+shim-signed
+shim-signed-common
+shim-unsigned
+#if ARCHITECTURES amd64
+grub-pc
+grub-pc-bin
+grub-efi-amd64
+grub-efi-amd64-bin
+grub-efi-amd64-signed
+grub-efi-amd64-unsigned
+shim-helpers-amd64-signed
+#endif
+#if ARCHITECTURES arm64
+grub-efi-arm64
+grub-efi-arm64-bin
+grub-efi-arm64-signed
+grub-efi-arm64-unsigned
+shim-helpers-arm64-signed
+#endif
