@@ -13,15 +13,12 @@ htop
 dconf-editor
 vainfo
 curl
-wget
 aria2
 firewalld
-pciutils
 usbutils
 smartmontools
 dmidecode
 rsync
-systemd-timesyncd
 gdebi
 7zip
 numactl

@@ -1,0 +1,30 @@
+#!/bin/sh
+
+set -e
+
+mkdir -p pool/main
+cd pool/main
+apt download grub-efi efibootmgr grub2-common mokutil shim-signed shim-signed-common shim-unsigned
+if [ "${LB_ARCHITECTURE}" = "amd64" ]; then
+    apt download grub-pc grub-pc-bin grub-efi-amd64 grub-efi-amd64-bin grub-efi-amd64-signed grub-efi-amd64-unsigned shim-helpers-amd64-signed
+fi
+if [ "${LB_ARCHITECTURE}" = "arm64" ]; then
+    apt download grub-efi-arm64 grub-efi-arm64-bin grub-efi-arm64-signed grub-efi-arm64-unsigned shim-helpers-arm64-signed
+fi
+cd ../..
+mkdir -p dists/${LB_PARENT_DISTRIBUTION_BINARY}/main/binary-${LB_ARCHITECTURE}
+apt-ftparchive packages pool/main > dists/${LB_PARENT_DISTRIBUTION_BINARY}/main/binary-${LB_ARCHITECTURE}/Packages
+touch dists/${LB_PARENT_DISTRIBUTION_BINARY}/main/binary-${LB_ARCHITECTURE}/Packages -d@${SOURCE_DATE_EPOCH}
+gzip -9 -c dists/${LB_PARENT_DISTRIBUTION_BINARY}/main/binary-${LB_ARCHITECTURE}/Packages > dists/${LB_PARENT_DISTRIBUTION_BINARY}/main/binary-${LB_ARCHITECTURE}/Packages.gz
+apt-ftparchive \
+    -o APT::FTPArchive::Release::Origin="Debian" \
+    -o APT::FTPArchive::Release::Label="Debian" \
+    -o APT::FTPArchive::Release::Suite="${LB_PARENT_DISTRIBUTION_BINARY}" \
+    -o APT::FTPArchive::Release::Version="$(. chroot/etc/os-release && echo ${VERSION_ID})" \
+    -o APT::FTPArchive::Release::Codename="${LB_PARENT_DISTRIBUTION_BINARY}" \
+    -o APT::FTPArchive::Release::Date="$(date -R --utc -d@${SOURCE_DATE_EPOCH})" \
+    -o APT::FTPArchive::Release::Architectures="${LB_ARCHITECTURE}" \
+    -o APT::FTPArchive::Release::Components="main" \
+    -o APT::FTPArchive::Release::Description="Last updated: $(date -R --utc -d@${SOURCE_DATE_EPOCH})" \
+    release dists/${LB_PARENT_DISTRIBUTION_BINARY} \
+    > dists/${LB_PARENT_DISTRIBUTION_BINARY}/Release

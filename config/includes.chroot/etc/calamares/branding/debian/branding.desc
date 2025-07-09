@@ -13,7 +13,7 @@ strings:
     shortVersion:        0.8.1
     versionedName:       THOS 0.8.1
     shortVersionedName:  THOS 0.8.1
-    bootloaderEntryName: THOS
+    bootloaderEntryName: Debian
     productUrl:          https://github.com/Secant1006/thos
     supportUrl:          https://github.com/Secant1006/thos
     knownIssuesUrl:      https://github.com/Secant1006/thos
