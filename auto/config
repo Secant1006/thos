@@ -37,8 +37,8 @@ lb config noauto \
 	--chroot-filesystem squashfs \
 	--memtest memtest86+ \
 	--bootloaders "$bootloader" \
-    --iso-application "THOS" \
-    --iso-preparer "" \
-    --iso-publisher "" \
-	--iso-volume "THOS 0.9 $(dpkg --print-architecture)"
+	--iso-application "THOS" \
+	--iso-preparer "" \
+	--iso-publisher "" \
+	--iso-volume "THOS 0.9 $(dpkg --print-architecture)" \
 "${@}"
