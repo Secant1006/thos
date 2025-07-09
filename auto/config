@@ -40,5 +40,5 @@ lb config noauto \
     --iso-application "THOS" \
     --iso-preparer "" \
     --iso-publisher "" \
-	--iso-volume "THOS 0.8.1 $(dpkg --print-architecture)"
+	--iso-volume "THOS 0.9 $(dpkg --print-architecture)"
 "${@}"

@@ -9,10 +9,10 @@ windowPlacement: center
 strings:
     productName:         THOS
     shortProductName:    THOS
-    version:             0.8.1
-    shortVersion:        0.8.1
-    versionedName:       THOS 0.8.1
-    shortVersionedName:  THOS 0.8.1
+    version:             0.9
+    shortVersion:        0.9
+    versionedName:       THOS 0.9
+    shortVersionedName:  THOS 0.9
     bootloaderEntryName: Debian
     productUrl:          https://github.com/Secant1006/thos
     supportUrl:          https://github.com/Secant1006/thos
