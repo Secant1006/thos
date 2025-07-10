@@ -99,7 +99,7 @@ name='Emoji Picker'
 
 [org/gnome/shell]
 enabled-extensions=['drive-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'arcmenu@arcmenu.com', 'ding@rastersoft.com', 'appindicatorsupport@rgcjonas.gmail.com', 'lockkeys@fawtytoo', 'lockkeys@vaina.lt', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'lunarcal@ailin.nemui', 'caffeine@patapon.info', 'kimpanel@kde.org', 'light-style@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['firefox-esr.desktop', 'org.gnome.Nautilus.desktop', 'wps-office-prometheus.desktop', 'org.gnome.Software.desktop', 'thunderbird.desktop', 'calamares-install-debian.desktop']
+favorite-apps=['firefox-esr.desktop', 'org.gnome.Nautilus.desktop', 'wps-office-prometheus.desktop', 'org.gnome.Software.desktop', 'thunderbird.desktop']
 welcome-dialog-last-shown-version='4294967295'
 
 [org/gnome/shell/extensions/arcmenu]
