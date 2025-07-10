@@ -12,7 +12,7 @@ label live-@FLAVOUR@-failsafe
 	append @APPEND_LIVE_FAILSAFE@
 
 label live-@FLAVOUR@-commandline
-	menu label ^Command-line only
+	menu label Command-line only
 	linux @LINUX@
 	initrd @INITRD@
 	append boot=live components locales=en_US.UTF-8 keyboard-layouts=us timezone=Asia/Shanghai 3
