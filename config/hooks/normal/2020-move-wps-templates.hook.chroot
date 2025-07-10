@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+mv /etc/skel/模板/* /etc/skel/.Templates
+rm -rf /etc/skel/模板
