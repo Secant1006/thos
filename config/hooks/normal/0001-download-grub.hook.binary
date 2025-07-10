@@ -2,6 +2,9 @@
 
 set -e
 
+LB_PARENT_DISTRIBUTION_BINARY=trixie
+VERSION_ID=13
+
 mkdir -p pool/main
 cd pool/main
 apt download grub-efi efibootmgr grub2-common mokutil shim-signed shim-signed-common shim-unsigned
@@ -20,7 +23,7 @@ apt-ftparchive \
     -o APT::FTPArchive::Release::Origin="Debian" \
     -o APT::FTPArchive::Release::Label="Debian" \
     -o APT::FTPArchive::Release::Suite="${LB_PARENT_DISTRIBUTION_BINARY}" \
-    -o APT::FTPArchive::Release::Version="$(. chroot/etc/os-release && echo ${VERSION_ID})" \
+    -o APT::FTPArchive::Release::Version="${VERSION_ID}" \
     -o APT::FTPArchive::Release::Codename="${LB_PARENT_DISTRIBUTION_BINARY}" \
     -o APT::FTPArchive::Release::Date="$(date -R --utc -d@${SOURCE_DATE_EPOCH})" \
     -o APT::FTPArchive::Release::Architectures="${LB_ARCHITECTURE}" \
