@@ -5,5 +5,13 @@ TogglePreedit=
 0=Shift_L
 1=Shift_R
 
+[Hotkey/EnumerateForwardKeys]
+0=Control+Shift+Shift_L
+1=Control+Shift+Control_L
+
+[Hotkey/EnumerateBackwardKeys]
+0=Control+Shift+Shift_R
+1=Control+Shift+Control_R
+
 [Behavior]
 DefaultPageSize=5
